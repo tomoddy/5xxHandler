@@ -1,5 +1,5 @@
 {
-  "name": "5xxHandler",
+  "name": "5xx-handler",
   "main": "5xx-handler.js",
   "compatibility_date": "2026-07-03"
 }
