@@ -1,0 +1,5 @@
+{
+  "name": "5xxHandler",
+  "main": "5xx-handler.js",
+  "compatibility_date": "2026-07-03"
+}
