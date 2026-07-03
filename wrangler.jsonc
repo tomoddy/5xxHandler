@@ -1,5 +1,13 @@
 {
   "name": "5xx-handler",
   "main": "5xx-handler.js",
-  "compatibility_date": "2026-07-03"
+  "compatibility_date": "2026-07-03",
+  "routes": [
+    { "pattern": "tzer0m.co.uk/*", "zone_name": "tzer0m.co.uk" },
+    { "pattern": "*.tzer0m.co.uk/*", "zone_name": "tzer0m.co.uk" },
+    { "pattern": "tzer.co.uk/*", "zone_name": "tzer.co.uk" },
+    { "pattern": "*.tzer.co.uk/*", "zone_name": "tzer.co.uk" },
+    { "pattern": "tomoddy.com/*", "zone_name": "tomoddy.com" },
+    { "pattern": "www.tomoddy.com/*", "zone_name": "tomoddy.com" }
+  ]
 }
