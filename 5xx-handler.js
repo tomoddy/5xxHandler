@@ -11,7 +11,7 @@ export default {
 <html>
 <head>
     <title>Service Unavailable</title>
-    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="refresh" content="5">
     <style>
         body { font-family: monospace; background: #1a1a1a; color: #e0e0e0; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
         .box { text-align: center; }
@@ -27,8 +27,16 @@ export default {
         <h1>${response.status}</h1>
         <p>Service is temporarily unavailable.</p>
         <p>Check the <a href="https://tzer0m.co.uk">Dashboard</a> for status.</p>
-        <p class="refresh-note">This page will auto-refresh every 10 seconds.</p>
+        <p class="refresh-note">Refreshing in <span id="countdown">5</span> seconds...</p>
     </div>
+    <script>
+        let secondsLeft = 5;
+        const countdownEl = document.getElementById('countdown');
+        setInterval(() => {
+            secondsLeft = Math.max(0, secondsLeft - 1);
+            countdownEl.textContent = secondsLeft;
+        }, 1000);
+    </script>
 </body>
 </html>`;
 
